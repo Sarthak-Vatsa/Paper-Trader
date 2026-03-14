@@ -1,0 +1,12 @@
+package com.papertrader.app.domain
+
+import com.google.firebase.auth.FirebaseUser
+import kotlinx.coroutines.flow.Flow
+
+interface AuthRepository {
+    val currentUser: FirebaseUser?
+    fun getAuthStateFlow(): Flow<FirebaseUser?>
+    suspend fun signIn(email: String, password: String): Result<FirebaseUser>
+    suspend fun signUp(email: String, password: String): Result<FirebaseUser>
+    fun signOut()
+}

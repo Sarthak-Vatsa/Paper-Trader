@@ -1,0 +1,5 @@
+<resources>
+    <!-- Base application theme. Using Material3 with no action bar since Compose handles its own top bars. -->
+    <style name="Theme.PaperTrader" parent="android:Theme.Material.Light.NoActionBar">
+    </style>
+</resources>
